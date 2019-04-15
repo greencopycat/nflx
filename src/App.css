@@ -1,0 +1,107 @@
+/* resets */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* page style */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: helvetica, verdana, arial;
+  background-color: #111;
+  color: #eee;
+  font-weight: 900;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* assets */
+
+
+/* custom styles */
+.filmstrip {
+  height: 24rem;
+  margin: 2rem 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.filmstrip label {
+  display: block;
+  height: 3rem;
+  line-height: 2;
+}
+
+.filmstrip > ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 24rem;
+}
+
+.filmstrip li {
+  display: inline-block;
+  position: relative;
+}
+
+.filmstrip li .item-image {
+  position: relative;
+  width: 13rem;
+  height: 18.5rem;
+  overflow: hidden;
+}
+.filmstrip li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.itemLabel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .75);
+  height: 2rem;
+  line-height: 1.5;
+  bottom: -2rem;
+  transition: bottom 300ms linear 50ms;
+}
+
+.btn {
+  background-color: transparent;
+  border: 0px solid #eee;
+  border-radius: 0;
+  opacity: 0;
+  transition: opacity 300ms linear 50ms;
+}
+
+.btn-remove,
+.btn-add {
+  position: absolute;
+  left: 0;
+  bottom: -2rem;
+  width: 100%;
+  color: #bada55;
+}
+
+.filmstrip li:hover .itemLabel {
+  bottom: 0rem;
+  transition: bottom 300ms linear 50ms;
+}
+
+.filmstrip li:hover .btn {
+  opacity: 1;
+  transition: opacity 300ms linear 50ms;
+}
