@@ -78,7 +78,7 @@ class Recommendations extends Component {
 /* Application */
 class App extends Component {
   // currently using mock ws server, need to be replace for production
-  ws = "http://localhost:3000/nflx";
+  ws = "http://localhost:3002/nflx";
   constructor (props) {
     super(props);
     this.state = {

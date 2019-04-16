@@ -9,7 +9,7 @@
     "json-server": "^0.14.2"
   },
   "scripts": {
-    "start": "json-server --watch src/ws/nflx.json --port 3000 & react-scripts start",
+    "start": "json-server --watch src/ws/nflx.json --port 3002 & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
